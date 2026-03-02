@@ -440,4 +440,15 @@
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
+/* Default - Desktop */
+.banner::before {
+  background: url('desktop-image.jpg') no-repeat center center/cover;
+}
+
+/* Mobile - Different Image */
+@media (max-width: 768px) {
+  .banner::before {
+    background: url('mobile-image.jpg') no-repeat center center/cover;
+  }
+}
 
